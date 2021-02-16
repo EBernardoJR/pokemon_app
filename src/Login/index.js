@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AsyncStorage } from 'react-native'
 import { Feather } from '@expo/vector-icons'; 
 import logo from '../../assets/pokemon-logo.png'
@@ -27,6 +27,16 @@ const Login = ({ navigation }) => {
       navigation.replace('Main')
     }
   }
+
+  useEffect(()=> {
+    AsyncStorage.getItem('name').then(n => {
+      if(n){
+        navigation.replace('Main')
+      }
+    })
+  }, [])
+
+  
 
   return (
     <Container>
