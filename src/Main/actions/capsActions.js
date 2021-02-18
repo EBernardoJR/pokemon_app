@@ -4,3 +4,10 @@ export const changeCaps= item => {
         payload: item
     }
 }
+
+export const clearCaps= item => {
+    return {
+        type: 'clear_caps',
+        payload: item
+    }
+}

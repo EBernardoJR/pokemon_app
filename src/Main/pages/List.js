@@ -66,15 +66,21 @@ const List = () => {
       </View>
       
       { 
-      filter.length > 1 ? pokes.map(poke=> {
-        if(poke.name.includes(filter)){
-          return (
-            <Card name={poke.name} url={poke.url} key={poke.url}/>
-          )
-        }else {
-          return false
+      filter.length > 1 ? 
+      <ScrollView>
+        {
+           pokes.map(poke=> {
+            if(poke.name.includes(filter)){
+              return (
+                <Card name={poke.name} url={poke.url} key={poke.url}/>
+              )
+            }else {
+              return false
+            }
+          })
         }
-      }) :
+      </ScrollView>
+      :
       <FlatList 
       data={pokes}
       onEndReached={loadPokes}//disparada qnd o usuario cehgar no final da lista

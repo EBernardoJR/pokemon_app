@@ -4,3 +4,10 @@ export const changeFavs= item => {
         payload: item
     }
 }
+
+export const clearFavs= item => {
+    return {
+        type: 'clear_favs',
+        payload: item
+    }
+}

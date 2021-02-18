@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux'
+import { clearCaps} from './actions/capsActions'
+import { clearFavs } from './actions/favsActions'
 import { AsyncStorage, Modal, TouchableOpacity } from 'react-native';
 import { FontAwesome, Feather } from '@expo/vector-icons'; 
 import { Container, Header, Title, Name, About, Logout, AboutView, LogView, ModalView, Close, ClosePress } from './styles';
 
 import Routes from './routes'
 
-const Main = ({ navigation }) => {
+const Main = ({ navigation, clearCaps, clearFavs }) => {
 
   const [name, setName] = useState('')
   const [modalVisible, setModalVisible] = useState('')
@@ -53,6 +56,8 @@ const Main = ({ navigation }) => {
 
           <LogView
             onPress={()=> {
+              clearCaps([])
+              clearFavs([])
               AsyncStorage.clear().then(()=> {
                 navigation.replace('Login')
               })
@@ -66,5 +71,13 @@ const Main = ({ navigation }) => {
           
   )
 }
+const mapState = state => {
+  return {
 
-export default Main;
+  }
+}
+
+export default connect(mapState, {
+  clearCaps, 
+  clearFavs
+})(Main);
