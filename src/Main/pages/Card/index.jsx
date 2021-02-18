@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
+import { useNavigation } from '@react-navigation/native'
 import { connect } from 'react-redux'
 import { AntDesign, Feather } from '@expo/vector-icons'; 
 import { changeFavs } from '../../actions/favsActions'
@@ -7,6 +8,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 const Card = ({ name, url, changeFavs, favs }) => {
 
+  const navigation = useNavigation()
 
   const [item, setItem] = useState('')
   const [liked, setLiked] = useState(false)
@@ -29,8 +31,11 @@ const Card = ({ name, url, changeFavs, favs }) => {
 
   useEffect(() => {
     getItem()
+  }, [])
+
+  useEffect(() => {
     isLiked()
-  }, [favs])
+  }, [liked])
 
   return (
 
@@ -119,12 +124,18 @@ const Card = ({ name, url, changeFavs, favs }) => {
               flexDirection: 'row',
               alignItems: 'center',
               marginTop: 10
-            }}>
+            }}
+            onPress={() => {
+              navigation.navigate('Details', {
+                url: url
+              })
+            }}
+            >
               <Text style={{
                 fontSize: 16,
                 marginRight: 5,
                 color: '#6A6E37'
-              }}>Ver detalhes</Text>
+              }}>Explorar</Text>
               <Feather name='arrow-right' color='#6A6E37' size={20}/>
             </TouchableOpacity>
         </View>
@@ -140,6 +151,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FDFFE6',
     alignSelf: 'center',
     marginTop: 15,
+    marginBottom: 10,
     minHeight: 200,
     borderRadius: 10,
     borderColor: '#6A6E37',
