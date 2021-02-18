@@ -31,11 +31,9 @@ const Card = ({ name, url, changeFavs, favs }) => {
 
   useEffect(() => {
     getItem()
+    isLiked()
   }, [])
 
-  useEffect(() => {
-    isLiked()
-  }, [liked])
 
   return (
 

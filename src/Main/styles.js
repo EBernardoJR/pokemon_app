@@ -25,3 +25,39 @@ export const Title = styled.Text`
     margin-left: 20px;
     margin-top: 10px;
 `
+
+export const Logout = styled.Text`
+    color: #fff;
+    font-size: 16px;
+`
+export const About = styled.Text``
+
+export const AboutView = styled.View`
+`
+export const LogView = styled.TouchableOpacity`
+    width: 100px;
+    height: 40px;
+    background-color: #EDA9A6;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+`
+export const ModalView = styled.View`
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+`
+
+export const Close = styled.View`
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    
+`
+
+export const ClosePress= styled.TouchableOpacity`
+     width: 100%;
+    height: 100%;
+`
