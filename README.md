@@ -1,8 +1,6 @@
 # Pokemon APP
     npm i
     npm start
-or
-    yarn start
 
 🇧🇷 Este Projeto foi criado usando o Expo Cli consumindo a [Pokeapi!](https://pokeapi.co).
 
