@@ -7,5 +7,5 @@
 ![alt text](./assets_readme/1.jpeg)
 
 ## Pokes
-    Os pokemons serão listados e ao final da lista mais 20 pokemons serão carregados.
+    Agore explore e descubra as criaturas, podendo salvar os seus favoritos e capturando os mais fortes 🐱‍🐉.
 ![alt text](./assets_readme/2.jpeg)
