@@ -9,6 +9,17 @@
 ## Pokes
     Agore explore e descubra as criaturas, podendo salvar os seus favoritos e capturar os mais fortes 🐱‍🐉.
 ![alt text](./assets_readme/2.jpeg)
-### Save pokes
+![alt text](./assets_readme/gif-2.gif)
+### Save Pokes
     Veja seus pokemons favoritos ❤
 ![alt text](./assets_readme/3.jpeg)
+
+### Capture Pokes
+    Achou um pokemon incrível? capture-o
+![alt text](./assets_readme/gif-3.gif)
+![alt text](./assets_readme/4.jpeg)
+    Tudo pronto ;)
+![alt text](./assets_readme/gif-4.gif)
+![alt text](./assets_readme/5.jpeg)
+
+    
