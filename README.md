@@ -4,7 +4,7 @@
 
 ## Signup
     Insira seu nome, idade e sexo e prossiga.
-<img src="./assets_readme/1.jpeg" width="100" height="100">
+<img src="./assets_readme/1.jpeg" width="480"  />
 ![alt text](./assets_readme/gif-1.gif)
 ## Pokes
     Agore explore e descubra as criaturas, podendo salvar os seus favoritos e capturar os mais fortes 🐱‍🐉.
