@@ -2,7 +2,7 @@
     npm i
     npm start
 
-🇧🇷 Este Projeto foi criado usando o Expo Cli consumindo a [Pokeapi!](https://pokeapi.co).
+Este Projeto foi criado usando o Expo Cli consumindo a [Pokeapi](https://pokeapi.co).
 
 ## Signup
     Insira seu nome, idade e sexo e prossiga.
